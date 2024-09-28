@@ -1,0 +1,67 @@
+body {
+    margin: auto;
+    width: max-content;
+    align-items: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    color: white;
+}
+.lime {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-right: 20px
+}
+.start {
+    float: left;
+    margin-left: 0px;
+    
+}
+a {
+    color: white;
+    justify-content: space-between;
+}
+nav {
+  display: flex;
+  margin-left: 0.5px;
+  justify-content: space-around;
+  color: white;
+}
+.city  {
+    height: 100px;
+    width: 600px;
+}
+.container {
+    display: flex;
+    background-color: brown;
+    justify-content: space-between;
+    
+}
+.chird{
+    flex-direction: row;
+}
+.container2 {
+    display: flex;
+    justify-content: space-between;
+
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: aqua;
+}
+.logo {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.logo1 {
+    width: 30px;
+}
+.business{
+    background-color: indigo;
+}

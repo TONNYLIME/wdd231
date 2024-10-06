@@ -1,47 +1,46 @@
 document.getElementById("currentyear").innerHTML = new Date().getFullYear();
 let text = document.lastModified;
 document.getElementById("lastModified").innerHTML = text;
-//http://api.weatherapi.com/v1/current.json?key=50dc6befd7e54bc7a9f203358242809&q=kenya&aqi=no
 
-const temperatureField = document.querySelector('.temp');
-const locationField = document.querySelector(".time_location p");
-const dataAndTimeField = document.querySelector(".time_location span");
-const conditionField = document.querySelector(".condition p");
-const searchField = document.querySelector(".search_area");
-const form = document.querySelector(".form")
+// select HTML elements in the document
+const myTown = document.querySelector('#town');
+const myDescription = document.querySelector("#description");
+const myTemperature = document.querySelector("#temperature");
+const myGraphics = document.querySelector("#graphic");
 
-form.addEventListener('search', searchForLocation)
+// variables for API Key-, 
 
-let target = 'Kisumu'
 
-const fetchResults = async (targetLocation) =>{
-    let url  = `http://api.weatherapi.com/v1/current.json?key=50dc6befd7e54bc7a9f203358242809&q=kenya&aqi=no`
+const myURL =`https://api.openweathermap.org/data/2.5/weather?lat=-1.3620391138143308&lon=36.97740031851115&appid=5c22d942704072055274ce96f32be6ce&units=metric`
 
-    const res = await fetch(url)
-
-    const data = await res.json()
- 
-
-    console.log(data)
-    let locationName = data.location.name
-    let time = data.location.localtime
-    let temp = data.current.temp_c
-    let condition = data.current.condition.text
-
-    function updateDetails(temp,locationName,time, condition){
-        temperatureField.innerText = temp
-        locationField.innerText = locationName
-        dataAndTimeField.innerText = time
-        conditionField = condition
-
+async function apiFetch() {
+    try {
+      const response = await fetch(myURL);
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data); // testing only
+        displayResults(data); // uncomment when ready
+      } else {
+          throw Error(await response.text());
+      }
+    } catch (error) {
+        console.log(error);
     }
+  }
 
-function searchForLocation(e){
-    e.preventDefault()
-    target = searchField.vslue
-    fetchResults(target)
-    }
-}
+  function displayResults(data) {
+    myTown.innerHTML = data.name
+    myTemperature.innerHTML = `${data.main}&deg;F`;
+    myDescription.innerHTML = data.weather[0].description;
+    myTemperature.innerHTML = `${data.main.temp}&deg;C`;
+    const iconsrc =`https://openweathermap.org/img/wn/${data.weather[0].icon}10d@2x.png;`
+    myGraphics.setAttribute('src', iconsrc);
+    myGraphics.setAttribute('alt', data.weather[0].description);
+    captionDesc.textContent = `${desc}`;
+    
+    
+  }
+  
+  apiFetch();
 
-fetchResults(target)
-
+  

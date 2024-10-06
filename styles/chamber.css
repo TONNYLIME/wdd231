@@ -1,0 +1,203 @@
+body {
+    margin: auto;
+    height: max-content;
+    max-width: fit-content;
+    background-color:  rgb(106, 166, 106);
+    
+}
+
+.page {
+        position: relative;
+        
+    }
+
+nav {
+    background-color: blue;
+    display: flex;
+    text-align: center;
+}
+
+
+.page {
+    max-width: fit-content;
+    margin: auto;
+    padding: .5rem;
+    margin-top: 0px;
+    }
+
+main {
+    margin-top: 0px;
+    
+}
+user agent stylesheet
+main {
+    display: flex;
+    unicode-bidi: isolate;
+    margin-top: 0px;
+    
+}
+
+.one {
+    display: flex;
+    text-align: center;
+    width: 600px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    background-color: black;
+    
+    
+}
+user agent stylesheet
+nav {
+    display: block;
+    unicode-bidi: isolate;
+    
+}
+
+nav span {
+    font-size: .8rem;
+    font-weight: 700;
+    background-color: var(--lightgray);
+    margin: 5px;
+    text-align: center;
+    
+}
+a {
+    color: white;
+}
+.lime {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    
+}
+header {
+    
+    margin-bottom: 0px;
+    
+    
+    
+}
+.let{
+    max-width: 600px;
+    display: flex;
+    margin: auto;
+    background-color: blue;
+
+}
+h1 {
+   margin-left: 10rem; 
+   color: white;
+   text-align: center;
+}
+* {
+    box-sizing: border-box;
+}
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+
+    
+}
+.row{
+    border: 2px shadow black;
+    
+}
+.try{
+    margin-top: auto;
+    box-shadow: black;
+    background-color: aliceblue;
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 50%;
+
+}
+.code {
+ margin: auto;
+ padding: 1rem;
+ display: flex;
+}
+
+h2 {
+    background-color: blue;
+    color: white;
+    margin-top: 0px;
+    text-align: center;
+}
+.three {
+    
+    margin: auto;
+    text-align: center;
+    width: fit-content;
+    margin-bottom: 1rem;
+}
+
+.course {
+    
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin: 2rem;
+    padding: 2rem;
+    background-color: black;
+    width: 5rem;
+
+
+
+    
+}
+
+footer {
+    align-content: center;
+    align-items: center;
+    color: white;
+    background-color: blue;
+    
+}
+.almost {
+    max-width: fit-content;
+    display: flex;
+    margin: auto;
+    
+    
+    
+    
+}
+.last {
+    max-width: fit-content;
+    display: flex;
+    margin: auto;
+    background-color: blue;
+    
+}
+
+.code> nav {
+    background-color: #f1f1f1;
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+  @media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:200px) {
+    /* For mobile phones: */
+    .menu, .body, .right {
+      width: 100%;
+    }
+  }

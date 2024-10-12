@@ -1,0 +1,50 @@
+/*@media only screen and (max-width:800px) {*/
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+body {
+    border: 2px solid black;
+    margin: auto;
+    max-width: min-content;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    color: white;
+    margin-bottom: 0px;
+}
+.start {
+    float: left;
+    margin-left: 0px;
+    border: 2px solid black;
+}
+.lime {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-right: 20px
+}
+footer {
+    align-content: center;
+    align-items: center;
+    color: white;
+    background-color: blue;
+    display: block;
+    justify-content: space-between
+
+}
+.foot {
+    max-width: fit-content;
+    margin: auto;
+}
+.logo1 {
+    max-width: 50px;
+    margin-left: 20px;
+    margin-right: auto;
+    
+}

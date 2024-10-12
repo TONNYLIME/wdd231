@@ -6,6 +6,17 @@ body {
     font-family: "Roboto", sans-serif;
     
 }
+ul {
+    display: flex;
+    justify-content: space-between;
+    max-width: fit-content;
+}
+li {
+    margin-right: 2rem;
+    align-content: center;
+    margin-top: 2rem;
+    color: bisque;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -76,30 +87,27 @@ a {
 
 
 }
-.footer {
-    display: grid;
-    align-content: space-between;
-    grid-template-columns: auto 10% auto;
-    gap: 5px;
-    padding: 0px;
-    height: 200px;
-    color: black;
-    border: 2px solid black;
-    margin-top: 0px;
-    line-height: 0.5px;
+
+footer {
+        align-content: center;
+        align-items: center;
+        color: white;
+        background-color: blue;
+        display: flex;
+        justify-content: space-between
     
 }
-.logo {
-    display: grid;
-    align-content: space-between;
-    grid-template-columns: auto auto auto;
+.foot {
+    max-width: fit-content;
     margin: auto;
-
-    
 }
 .logo1 {
-    width: 30px;
+    max-width: 50px;
+    margin-left: 20px;
+    margin-right: auto;
+    
 }
+
 .business{
     background-color: indigo;
 }

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of business directory</title>
+    <meta name="description" content="">
+    <meta name="author" content="Tonny L. Lime">
+    <link rel="icon" href="../favicon.ico/favicon (1).ico">
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <link rel="stylesheet" href="./styles/join-small.css">
+    <link rel="stylesheet" href="./styles/join-large.css">
+    <script src="./scripts/directory.js" defer></script>
+    <Script src="./scripts/join.js" defer></Script>
+
+</head>
+<body>
+    <header>
+        <div class="start"> 
+            <p > <img src="../images/tonny.jpg" class="lime" alt ="tonny profile pic "> Nairobi <br> chamber of commerce </p>
+            
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./directory.html">Directory</a></li>
+                <li><a href="./join.html">Join</a></li>
+                <li><a href="">Discover</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main>
+        <div class="container">
+        <form  action="./thankyou.html" method="get">
+            <div>
+                <label for="firstName">First Name:</label>
+                <input name="firstName" id="firstName" type="text" autocomplete="given-name" title="firstname" required/>
+            </div>
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input name="lastName" id="lastName" type="text" autocomplete="family-name" title="lastname" required/>
+            </div>
+            <div>
+                <label for="organizationtitle">Organizational Title</label>
+                <input name="organizationtitle" id="organizationtitle" type="organizationtitle" title="organizationtitle" autocomplete="on"  />
+            </div>
+            <div>
+                <label for="email">Email Address</label>
+                <input name="email" id="email" type="email" autocomplete="on" title="email" required/>
+            </div>
+            <div>
+                <label for="phonenumber">Phone Number</label>
+                <input name="phonenumber" id="phonenumber" type="phonenumber" autocomplete="on" title="phonenumber" required/>
+            </div>
+            <div>
+                <label for="businessname">Business Name</label>
+                <input name="businessname" id="businessname" type="businessname" autocomplete="on" title="businessname" required/>
+               
+            </div>
+           
+            <div>
+                <label for="level">Membership Level:</label>
+                <select id="level" name="level">
+                    <option value="npmembership">NP Membership</option>
+                    <option value="Bronzemembership">Bronze Membership</option>
+                    <option value="silvermembersip">Silver Membership</option>
+                    <option value="goldmembership">Gold Membership</option>
+                </select>
+            </div>
+            <div class="form-example">
+                <input type="submit" value="Join Us Now!" />
+            </div>
+            <div>
+                <label for="businessname">Business Name</label>
+                <textarea name="message" rows="1" cols="30" title="message"></textarea>
+
+            </div>
+            <label for="timestamp">Timestamp:</label>
+            <input name="timestamp" id="timestamp" type="hidden" />
+        </form>
+    </div>
+        <div class="container">
+            <h2>Memmbership Level</h2>
+            <div class="card-child">
+                <h6>NP Memmbership</h6>
+                <button id="openButton1">Read more info</button>
+            </div>
+            <div class="card-child">
+                <h6>Bronze Membership</h6>
+                <button id="openButton2">Read more info</button>
+            </div>
+            <div class="card-child">
+                <h6>NP Memmbership</h6>
+                <button id="openButton3">Read more info</button>
+            </div>
+            <div class="card-child">
+                <h6>NP Memmbership</h6>
+                <button id="openButton4">Read more info</button>
+            </div>
+            <dialog id="dialogBox">
+                <Div>
+                  
+                </Div>
+                <button id="closeButton">Close</button>
+          
+              </dialog>
+          
+        </div>
+    </main>
+    <footer>
+        <div class="foot">
+            <h6>Nairobi Chamber of Commerce</h6>
+            <p>Topyard Launch, Enterprise Rd</p>
+            <p>Lumixlumucy@gmail.com</p>
+            <P>+254-712022607</P>
+        </div>
+        <div class="foot">
+            <img src="./images/youtube.jpg" alt="" class="logo1" >
+            <img src="./images/facebook.jfif" alt="" class="logo1">
+            <img src="./images/Twitter.png" alt="" class="logo1" >
+        </div>   
+        <div class="foot">
+            <h6>WDD231 Class Project</h6>
+            <p>Tonny L. Lime</p>
+            <p >©❤ <span id="currentyear"></span> Tonny Lime❤ Nairobi, Kenya </p>
+            <p class="last">Last updated: <span id="lastModified"></span></p>
+        
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,232 @@
+@media only screen and (max-width:1600px) {
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+body {
+    border: 2px solid black;
+    margin: auto;
+    max-width: max-content;
+    background-color: bisque;
+}
+a {
+    color: bisque;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    max-width: fit-content;
+    
+    
+}
+li {
+    margin-right: 2rem;
+    align-content: center;
+    margin-top: 2rem;
+    color: bisque;
+    
+    
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    color: white;
+    margin-bottom: 0px;
+}
+.start {
+    float: left;
+    margin-left: 0px;
+    border: 2px solid black;
+}
+.lime {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-right: 20px
+}
+footer {
+    align-content: center;
+    align-items: center;
+    color: white;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between
+
+}
+.foot {
+    max-width: fit-content;
+    margin: auto;
+}
+.logo1 {
+    max-width: 50px;
+    margin-left: 20px;
+    margin-right: auto;
+    
+}
+}
+p {
+    justify-content: center;
+}
+main {
+    display: flex;
+    width:100%;
+    overflow:auto;
+}
+.container  {
+    width:40%;
+    float:left;
+    justify-content: space-between;
+    margin: auto;
+  }
+.card-child {
+    border: 2px solid yellow;
+    margin: auto;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    line-height: 2px;
+    border-radius: 10px;
+    
+}
+::backdrop {
+    background-image: linear-gradient(
+      45deg,
+      magenta,
+      rebeccapurple,
+      dodgerblue,
+      green
+    );
+    opacity: 0.75;
+  }
+  
+@media only screen and (max-width:800px) {
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+body {
+    border: 2px solid black;
+    margin: auto;
+    max-width: min-content;
+}
+ul {
+    display: grid;
+    justify-content: space-between;
+    max-width: fit-content;
+    
+    
+}
+li {
+    margin-right: 2rem;
+    align-content: center;
+    margin-top: 2rem;
+    
+    
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    color: white;
+    margin-bottom: 0px;
+}
+.start {
+    float: left;
+    margin-left: 0px;
+    border: 2px solid black;
+}
+.lime {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+footer {
+    align-content: center;
+    align-items: center;
+    color: white;
+    background-color: blue;
+    display: block;
+    justify-content: space-between
+
+}
+.foot {
+    max-width: fit-content;
+    margin: auto;
+}
+.logo1 {
+    max-width: 50px;
+    margin-left: 20px;
+    margin-right: auto;
+    
+}
+main {
+    display: grid;
+    width:100%;
+    overflow:auto;
+    margin: auto;
+}
+.container  {
+    width:50%;
+    
+    justify-content: space-between;
+    margin: 2rem;
+    
+}
+
+  
+  }
+.card-child {
+    border: 2px solid yellow;
+    margin: auto;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    line-height: 2px;
+    border-radius: 10px;
+    background-color: red;
+    animation-name: example;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: purple;}
+    to {background-color: yellow;}
+  }
+::backdrop {
+    background-image: linear-gradient(
+      45deg,
+      magenta,
+      rebeccapurple,
+      dodgerblue,
+      green
+    );
+    opacity: 0.75;
+  }
+
+h2 {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+}
+@keyframes slidein {
+    from {
+      translate: 150vw 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }

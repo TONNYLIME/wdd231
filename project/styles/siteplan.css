@@ -1,0 +1,18 @@
+body {
+    margin: auto;
+    display: grid;
+    width: max-content;
+    border: 2px solid #3D2F5B;
+    justify-content: center;
+    background-color: #FF00FF;
+}
+img {
+    display: block;
+    margin: auto;
+   
+}
+h1 {
+    align-items: center;
+    align-content: center;
+    color: #00AA00;
+}

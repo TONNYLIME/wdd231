@@ -34,3 +34,4 @@ openButton4.addEventListener('click', () => {
 closeButton.addEventListener('click', () => {
   dialogBox.close();
 });
+document.getElementById("timestamp").innerHTML = Date.now();

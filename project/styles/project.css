@@ -80,15 +80,17 @@ h3{
     align-content: space-evenly;
     grid-template-columns: auto auto auto;
     gap: 5px;
-    
     padding: 0px;
     margin-top: 0px;
 }
-.child {
-    flex-direction: row;
+.child {  
+    display: grid;
     border: 2px solid black;
     margin-top: 0px;
     background-color: purple;
+    width: 400px;
+    
+  
 
 }
 .container2 {
@@ -183,12 +185,119 @@ footer {
     opacity: 0;
   }
 }
+.wrapper{
+  width: 420px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  margin-bottom: 0px;
+  margin-right: 0px;
+}
+.wrapper header{
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px;
+  justify-content: space-between;
+}
+header .icons{
+  display: flex;
+}
+header .icons span{
+  height: 38px;
+  width: 48%;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+.icons span:last-child{
+  margin-right: 0px;
+}
+header .icons span:hover{
+  background: red;
+}
+header .current-date{
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+.calendar{
+  padding: 20px;
+}
+.calendar ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+.calendar .days{
+  margin-bottom: 20px;
+}
+.calendar li{
+  color: black;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+.calendar .weeks li{
+  
+  flex-wrap: wrap;
+  font-weight: 500;
+  cursor: pointer;
+  color: red;
+  
+
+
+  justify-content: space-between;
+
+
+}
+.calendar .days li{
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+  
+}
+.days li.inactive{
+  color: blue;
+}
+.days li.active{
+  color: blue;
+}
+.days li::before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.days li.active::before{
+  background: #9B59B6;
+}
+.days li:not(.active):hover::before{
+  background: #f2f2f2;
+}
+
   
   @media screen and (max-width: 500px) {
     .header a {
       float: none;
       display: block;
       text-align: left;
+    }
+    body{
+      display: block;
+      width: min-content;
+    }
+    .header{
+      display: block;
     }
     
     .header-right {

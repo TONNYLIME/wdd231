@@ -238,25 +238,22 @@ margin-right: auto;
 }
 
 
-@media (min-width: 100em) {
-    body {
-        grid-template-columns: 40em 1fr;
-        grid-template-rows: auto 1fr auto;
-    }
-}
+@media only screen and (max-width:300px){
+
 
 body{
-    margin: 0;
-        display: grid;
+        margin: 0;
+        display: block;
         align-items: center;
         justify-content: center;
         font-family: Acme, Arial, sans-serif;
         line-height: 1.4;
+        width: min-content;
 
 }
-article,
+main,
 header,
-footer
+footer,
 section{
     display: block;
 }
@@ -273,7 +270,7 @@ section{
 .stars input:checked ~ label::before {
 	content: "\2605";
 }
-
+}
 </style>
     
 </head>

@@ -3,6 +3,31 @@
     box-sizing: border-box;
 
 }
+:root {
+  --primary: #838486;
+  --accent: #020101d7;
+  --bg: #f9fafb;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+main{
+   padding: 1rem;
+}
+
+h1 {
+  grid-row: 1;
+}
 
 /******************header*********************/
 header {
@@ -58,13 +83,14 @@ header span {
  .navigation a {
     display: block;
     padding: .8rem 10px;
-    color: #3D4058;
+    color: var(--bg);
     text-decoration: none;
-    border-bottom: solid 1px #ddd;
+    background-color: var(--accent);
+    border-bottom: 3px solid #eee;
 
  }
  .navigation li.current{
-    background-color: #eee;
+    background-color: var(--primary);
  }
  .navigation a:hover {
     background-color: #E07A5F;
@@ -72,10 +98,19 @@ header span {
  h1 {
     margin: 10px;
  }
+ .main h2,.hero h2,.full  h2 {
+  background-color: var(--accent);
+  text-align: center;
+  color: var(--bg);
+ }
+ .main p {
+  margin: 2rem;
+  padding: 0;
+ }
 
  /**********************footer********************/
  footer {
-   background-color: #eee;
+   
    padding: 1rem 10px;
    text-align: center;
  }
@@ -105,3 +140,72 @@ header span {
  .social a:hover {
    background-color: #ddd;
  }
+
+ section {
+  padding: 2rem 1rem;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  padding:
+   1rem;
+  max-width: 90%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.byu{
+   display: flex;
+   
+
+}
+
+.course{
+grid-template-columns: 24px auto 44px;
+
+}
+.course h1 {
+  background-color: var(--primary);
+  height: auto;
+  padding: 0;
+  margin: 0;
+  display: block;
+  text-align: center;
+}
+
+.subject a {
+  background-color: var(--primary);
+  text-decoration: none;
+  border-radius: 5px;
+  width: 90px;
+  height: auto;
+  padding: 1rem 40px;
+}
+
+.byu ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    column-gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.finish{
+  background-color: var(--primary);
+}

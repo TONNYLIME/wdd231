@@ -178,7 +178,7 @@ img {
 grid-template-columns: 24px auto 44px;
 
 }
-.course h1 {
+.course h3 {
   background-color: var(--primary);
   height: auto;
   padding: 0;

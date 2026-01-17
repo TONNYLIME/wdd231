@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Subaru Genuine",
+      "address": "Maxxix,Topyard along Enterprise RD opposite Isiolo RD",
+      "phone": "+254 723078843",
+      "website": "NO Website",
+      "image": "business1.jpg",
+      "membershipLevel": 3,
+      "description": "Family-owned bakery specializing in artisan breads and pastries."
+    },
+    {
+      "name": "DriveMaster Auto Garage",
+      "address": "Maxxix,Topyard along Enterprise RD opposite Isiolo RD",
+      "phone": "+254 788520429",
+      "website": "do have webside",
+      "image": "business2.jpg",
+      "membershipLevel": 2,
+      "description": "Professional residential and commercial landscaping services."
+    },
+    {
+      "name": "Suba-Tech Kenya LTD",
+      "address": "Jogoo Road, Opp. City Stadium,bMotor Trade Centre, 1st Floo",
+      "phone": "+254722749381",
+      "website": "https://subatechkenya.co.ke/",
+      "image": "subatec.webp",
+      "membershipLevel": 3,
+      "description": "They sales subaru parts."
+    },
+    {
+      "name": "Baraza's Garage (Subaru Genuine Parts, repairs and service)",
+      "address": "MRXQ+QMP, Enterprise Rd, Nairob",
+      "phone": "0723 390813",
+      "website": "",
+      "image": "business4.jpg",
+      "membershipLevel": 1,
+      "description": "Autoshop repair garage."
+    },
+    {
+      "name": "Irvine Owino Subaru",
+      "address": "Utawala,Nairobi",
+      "phone": "+254723993601",
+      "website": "no website",
+      "image": "business5.jpg",
+      "membershipLevel": 2,
+      "description": "subaru transmission repair."
+    },
+    {
+      "name": "BOXPARK Subsru",
+      "address": "Bamburi RD",
+      "phone": "+254119182651",
+      "website": "N/A",
+      "image": "business6.jpg",
+      "membershipLevel": 3,
+      "description": "Subaru repair shop."
+    },
+    {
+      "name": "Confidence 6 Auto Repair",
+      "address": "Maxxix,Topyard along Enterprise RD opposite Isiolo RD",
+      "phone": "+254727763343",
+      "website": "N/A",
+      "image": "business7.jpg",
+      "membershipLevel": 1,
+      "description": "Reliable auto repair and maintenance services."
+    }
+  ]
+}

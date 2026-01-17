@@ -13,7 +13,7 @@
     <meta property="og:description" content="Professional Subaru repair, tuning, and maintenance.">
     <meta property="og:image" content="https://web.facebook.com/images/social-preview.png">
     <meta property="og:url" content="https://web.facebook.com">
-    <meta property="og:type" content="website">
+    
     <!-- Facebook Open Graph Meta Tags -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="WDD231 | TONNY L LIME | DIRECTORY">
@@ -23,16 +23,55 @@
     <meta property="og:site_name" content="Lumix's Subaru Fix">
 
     <!-- css-->
-     
-
+     <link rel="stylesheet" href="styles/directory.css">
+     <link rel="stylesheet" href="styles/directory-large.css">
+     <link rel="stylesheet" href="styles/normalize.css">
+    <!--javascripts-->
+    <script src="/scripts/navigation.js"defer></script>
 </head>
 <body>
     <header>
-        <header>
         <img src="/images/car-front-fill.svg" alt="site logo" width="512" height="512">
         <span>Lumix's Subaru Fix</span>
         <button id="ham-btn" class="hamburger"></button>
     </header>
-    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="current"><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="directory-controls">
+            <button id="grid">⧉ Grid View</button>
+            <button id="list">☰ List View</button>
+        </section>
+
+        <section id="members" class="grid"></section>
+
+        <script src="scripts/directory.js"></script>
+
+    </main>
+    <footer>
+        <div class="contacts">
+            <p>Lumix's Subaru Fix</p>
+            <p>Topyard Maxxis Enterprise RD</p>
+            <P>Lumixlumucy@gmail.com</P>
+            <p>+254712022607</p>
+        </div>
+        <div class="social">
+            <a href="https://web.facebook.com/tonny.lumwaji" target="_blank"> <img src="/images/facebook.svg" alt="facebook" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/tonny-lime-72348242/" target="_blank"> <img src="/images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+            <a href="https://myaccount.microsoft.com/?ref=MeControl&login_hint=tlime@byupathway.edu" target="_blank"> <img src="/images/microsoft-teams.svg" alt="teams" width="16" height="16"></a>
+            <a href="https://tonnylime.github.io/wdd231/" target="_blank"> <img src="/images/github.svg" alt="github" width="16" height="16"></a>
+        </div>
+        <div class="finish">
+            <p>WDD231 Class Project</p>
+            <p>Tonny  Lumwaji Lime </p>
+            <p>©<span id="currentyear"></span>🌹Tonny Lumwaji Lime🌹Kenya</p>
+            <p><span id="lastModified"></span></p>
+        </div>
+    </footer>
 </body>
 </html>

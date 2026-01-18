@@ -31,6 +31,7 @@ main{
 h1 {
   grid-row: 1;
   text-align: center;
+  margin: 10px;
 }
 
 /******************header*********************/
@@ -99,9 +100,7 @@ header span {
  .navigation a:hover {
     background-color: #E07A5F;
  }
- h1 {
-    margin: 10px;
- }
+ 
  .main h2,.hero h2,.full  h2 {
   background-color: var(--accent);
   text-align: center;
@@ -198,6 +197,7 @@ grid-template-columns: 24px auto 44px;
   width: 90px;
   height: auto;
   padding: 1rem 40px;
+color: #fff;
 }
 
 .byu ul {
@@ -210,10 +210,6 @@ grid-template-columns: 24px auto 44px;
     justify-content: center;
 }
 
-.social a{
-  background-color: var(--primary);
-  color: #fff;
-}
 #members.grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

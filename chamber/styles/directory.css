@@ -19,6 +19,9 @@ body {
   margin: 0;
   overflow-x: hidden;
   padding: 0;
+  font-family: "Roboto", system-ui, sans-serif;
+
+
 }
 
 main{

@@ -27,6 +27,7 @@ main{
 
 h1 {
   grid-row: 1;
+  text-align: center;
 }
 
 /******************header*********************/

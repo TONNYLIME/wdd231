@@ -7,18 +7,12 @@
     <link rel="icon" href="images/favicon.ico" >
     <meta name="description" content="Professional Subaru repair, tuning, and maintenance by Lumix.">
     <meta name="author" content="Tonny L. Lime">
-
-    <!-- Open Graph (Facebook, Github, LinkedIn, ) -->
-    <meta property="og:title" content="Lumix's Subaru Fix">
-    <meta property="og:description" content="Professional Subaru repair, tuning, and maintenance.">
-    <meta property="og:image" content="https://web.facebook.com/images/social-preview.png">
-    <meta property="og:url" content="https://web.facebook.com">
     
     <!-- Facebook Open Graph Meta Tags -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="WDD231 | TONNY L LIME | DIRECTORY">
     <meta property="og:description" content="This is a link to my page where I share information requrding subaru solenoix and I perform the fix.">
-    <meta property="og:image" content="https://tony-beta.vercel.app/solenoid.html">
+    <meta property="og:image" content="https://tony-beta.vercel.app/images/preview.png">
     <meta property="og:url" content="https://tony-beta.vercel.app/index.html">
     <meta property="og:site_name" content="Lumix's Subaru Fix">
 
@@ -27,7 +21,8 @@
      <link rel="stylesheet" href="styles/directory-large.css">
      <link rel="stylesheet" href="styles/normalize.css">
     <!--javascripts-->
-    <script src="/scripts/navigation.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
 </head>
 <body>
     <header>
@@ -43,15 +38,16 @@
         </ul>
     </nav>
     <main>
-        
-        <section class="directory-controls">
+        <h1>Members of commerce in my town.</h1>
+        <div class="directory-controls">
             <button id="grid">⧉ Grid View</button>
             <button id="list">☰ List View</button>
-        </section>
+        </div>
 
-        <section id="members" class="grid"></section>
+        <div id="members" class="grid">
+           
+        </div>
 
-        <script src="scripts/directory.js"></script>
 
     </main>
     <footer>

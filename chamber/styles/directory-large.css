@@ -23,11 +23,12 @@
     }
 
     .navigation {
-        display: block;
+        display: grid;
         border-bottom: solid 1px #eee;
     }
     .navigation ul{
         display: flex;
+        margin-right: auto;
     }
     .navigation a {
         border: none;
@@ -42,7 +43,7 @@
                             "full full";
   }
 
-  .main {
+.main {
     grid-area: main;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -72,5 +73,51 @@
     width: 400px;
 
   }
-}
+  /* Hero1 */
+  .hero1-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1.5rem;
+    border-radius: 6px;
+  }
+
+  /* Events & Weather side by side */
+  .events-weather {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+
+  /* Spotlights in a row */
+  .spotlights {
+    column-gap: 10rem;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    gap: 8rem;
+    display: block;
+  }
+  .sportlight {
+    display: flex;
+    gap: 5rem;
+  }
+  .enter {
+    max-width: 30rem;
+  }
+
     
+.card,.events {
+  max-width: 20rem;
+
+}
+
+.weather {
+  max-width: 25rem;
+  background-color: blue;
+}
+
+}

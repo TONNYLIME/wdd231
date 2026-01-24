@@ -74,7 +74,7 @@ header span {
  }
  
  .navigation {
-    display: none;
+    display: grid;
  }
 
  .navigation.show {
@@ -232,3 +232,98 @@ color: #fff;
   max-width: 100%;
   height: auto;
 }
+.hero1 {
+  
+  position: relative;
+  text-align: center;
+}
+
+.hero1 img {
+  display: block;
+  width: 100%;
+  max-height: 300px;   /*I adjust as i need */
+  object-fit: cover;
+  border-radius: 6px;
+  outline: none;
+}
+
+.hero1-content {
+  margin-top: 1rem;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #004a8f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.cta-button:hover {
+  background-color: #003366;
+}
+
+/* ---------- Events & Weather ---------- */
+
+.events,
+.weather {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+/* ---------- Spotlights ---------- */
+
+.spotlights {
+  display: flex;
+  column-gap: 2rem;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+}
+
+.enter {
+  background-color: #eaeaea;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+  
+  
+
+}
+
+
+.card {
+  border: 1px solid #3D4058;
+  background-color: #E07A5F;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.card h3 {
+  color: #004a8f;
+  margin: .3rem 0;
+}
+.card #description {
+  text-transform: capitalize;
+  color: #3a525a;
+  margin: .3rem 0;
+}
+.card #temperature {
+  font-size: 2rem;
+  color: #537279;
+  margin: .3rem 0;
+}
+
+.weather {
+  display: grid;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+}
+

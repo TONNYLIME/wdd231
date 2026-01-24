@@ -2,6 +2,8 @@ const membersContainer = document.querySelector("#members");
 const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
 
+
+
 async function getMembers() {
   try {
     const response = await fetch("data/members.json");
@@ -41,6 +43,7 @@ gridButton.addEventListener("click", () => {
   membersContainer.classList.remove("list");
 });
 
+
 listButton.addEventListener("click", () => {
   membersContainer.classList.add("list");
   membersContainer.classList.remove("grid");
@@ -48,3 +51,5 @@ listButton.addEventListener("click", () => {
 
 // Initialize
 getMembers();
+
+

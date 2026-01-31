@@ -1,8 +1,5 @@
 *{box-sizing: border-box;}
-html {
-  -webkit-text-size-adjust: 100%; 
-  -ms-text-size-adjust: 100%;
-}
+
 
 h1 {
   color: #3D405B;
@@ -11,6 +8,7 @@ h1 {
 form {
     margin: 1rem 2%;
     padding: 20px;
+    background-color: antiquewhite;
   
     label {
       display: block;
@@ -55,7 +53,6 @@ form {
       padding: .75rem 1.5rem;
       margin: 2rem 0;
       font-size: 1.2rem;
-      -webkit-appearance: none;
       appearance: none;
     }
   }

@@ -102,7 +102,7 @@ header span {
  }
  
  .main h2,.hero h2,.full  h2 {
-  background-color: var(--accent);
+  background-color: var(--bg);
   text-align: center;
   color: var(--bg);
  }

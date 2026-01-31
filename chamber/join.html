@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,13 +36,14 @@
             <li class="current"><a href="/chamber/join.html"></a></li>
             <li><a href="#">Final</a></li>
         </ul>
+  </nav>
   <main>
     <h1>Join My Chamber of commerce</h1>
 
     <form method="GET" action="thankyou.html" class="designOne">
       <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
       <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
-      <label>Organizational title <input type="text" name="organizational_title"title="Only letters, hyphens,and spaces.Minimum7 characters" autocomplete="organization-title" pattern="^[A-Za-z]{7,}&"></label>
+      <label>Organizational Title <input type="text" name="organizational_title" title="Only letters, hyphens,and spaces.Minimum7 characters" autocomplete="organization-title" pattern="^[A-Za-z]{7,}&"></label>
       <label>Email <input type="email" name="email" required placeholder="yourname@examble.com"  title="Your Email" autocomplete="email"></label>
       <label>Mobile Phone <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="+[country code] [mobile number]" required></label>
       <label>Business / Organization Name <input type="text" id="organization" name="organization" title="Business or organization name" autocomplete="organization" required></label>
@@ -64,6 +66,7 @@
       <input type="hidden" name="id" value="">
 
     <button type="submit">Join Us</button>
+  </form>
     <!-- MEMBERSHIP CARDS -->
   <aside class="membership-section" aria-labelledby="membership-heading">
     <h2 id="membership-heading">Membership Levels</h2>
@@ -102,7 +105,6 @@
       </article>
     </div>
   </aside>
-</main>
 
 <!-- MODALS -->
 <div class="modal" id="bronzeModal" role="dialog" aria-modal="true" aria-labelledby="bronzeTitle">
@@ -151,9 +153,6 @@
     <button class="close">Close</button>
   </div>
 </div>
-
-        
-    </form>
   </main>
   <footer>
       <div class="social">

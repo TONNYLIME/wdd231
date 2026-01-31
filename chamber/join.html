@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD231 | TONNY L LIME | Join</title>
+  <link rel="icon" href="images/favicon.ico" >
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="/styles/base.css">
+  <link rel="stylesheet" href="/styles/large.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large1.css">
+  <script src="/scripts/navigation.js" defer></script>
+  <script src="scripts/join.js"></script>
+  <meta name="description" content="A site for helping other business join my business Of Commerce.">
+
+  <!-- Open Graph (Facebook, Github, LinkedIn, ) -->
+  <meta property="og:title" content="Lumix's Subaru Fix">
+  <meta property="og:description" content="Professional Subaru repair, tuning, and maintenance.">
+  <meta property="og:image" content="https://web.facebook.com/images/social-preview.png">
+  <meta property="og:url" content="https://web.facebook.com">
+  <meta property="og:type" content="website">
+
+</head>
+
+<body>
+  <header>
+    <img src="/images/car-front-fill.svg" alt="site logo" width="512" height="512">
+        <span>Lumix's Subaru Fix</span>
+        <button id="ham-btn" class="hamburger"></button>
+  </header>
+  <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="/chamber/index.html">Home</a></li>
+            <li ><a href="./chamber/directory.html">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+  <main>
+    <h1>Join My Chamber of commerce</h1>
+
+    <form method="GET" action="thankyou.html" class="designOne">
+      <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+      <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+      <label>Organizational title <input type="text" name="organizational_title"title="Only letters, hyphens,and spaces.Minimum7 characters" autocomplete="organization-title" pattern="^[A-Za-z]{7,}&"></label>
+      <label>Email <input type="email" name="email" required placeholder="yourname@examble.com"  title="Your Email" autocomplete="email"></label>
+      <label>Mobile Phone <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="+[country code] [mobile number]" required></label>
+      <label>Business / Organization Name <input type="text" id="organization" name="organization" title="Business or organization name" autocomplete="organization" required></label>
+
+      <label for="membership_level">Membership Level:</label>
+        <select name="membership_level" id="membership_level" required>
+          <option value="" disabled selected>Select a membership level</option>
+          <option value="np">NP Membership (Non-Profit, No Fee)</option>
+          <option value="bronze">Bronze Membership</option>
+          <option value="silver">Silver Membership</option>
+          <option value="gold">Gold Membership</option>
+        </select>
+
+      <label>Description:<textarea name="description" rows="4" cols="50"></textarea></label>
+      <br><br>
+
+      <!-- Hidden Fields -->
+      <input type="hidden" name="timestamp" id="timestamp">
+      <input type="hidden" name="type" value="business_form">
+      <input type="hidden" name="id" value="">
+
+    <button type="submit">Join Us</button>
+    <!-- MEMBERSHIP CARDS -->
+  <aside class="membership-section" aria-labelledby="membership-heading">
+    <h2 id="membership-heading">Membership Levels</h2>
+
+    <div class="cards">
+      <article class="card">
+        <h3>Bronze</h3>
+        <p>$50 / year</p>
+        <button aria-haspopup="dialog" data-modal="bronzeModal">
+          View Benefits
+        </button>
+      </article>
+
+      <article class="card">
+        <h3>Silver</h3>
+        <p>$100 / year</p>
+        <button aria-haspopup="dialog" data-modal="silverModal">
+          View Benefits
+        </button>
+      </article>
+
+      <article class="card">
+        <h3>Gold</h3>
+        <p>$250 / year</p>
+        <button aria-haspopup="dialog" data-modal="goldModal">
+          View Benefits
+        </button>
+      </article>
+
+      <article class="card">
+        <h3>Platinum</h3>
+        <p>$500 / year</p>
+        <button aria-haspopup="dialog" data-modal="platinumModal">
+          View Benefits
+        </button>
+      </article>
+    </div>
+  </aside>
+</main>
+
+<!-- MODALS -->
+<div class="modal" id="bronzeModal" role="dialog" aria-modal="true" aria-labelledby="bronzeTitle">
+  <div class="modal-content">
+    <h3 id="bronzeTitle">Bronze Benefits</h3>
+    <ul>
+      <li>Access to monthly newsletter</li>
+      <li>Member-only events</li>
+    </ul>
+    <button class="close">Close</button>
+  </div>
+</div>
+
+<div class="modal" id="silverModal" role="dialog" aria-modal="true" aria-labelledby="silverTitle">
+  <div class="modal-content">
+    <h3 id="silverTitle">Silver Benefits</h3>
+    <ul>
+      <li>All Bronze benefits</li>
+      <li>Training workshops</li>
+      <li>Event discounts</li>
+    </ul>
+    <button class="close">Close</button>
+  </div>
+</div>
+
+<div class="modal" id="goldModal" role="dialog" aria-modal="true" aria-labelledby="goldTitle">
+  <div class="modal-content">
+    <h3 id="goldTitle">Gold Benefits</h3>
+    <ul>
+      <li>All Silver benefits</li>
+      <li>Homepage spotlight ads</li>
+      <li>Priority event access</li>
+    </ul>
+    <button class="close">Close</button>
+  </div>
+</div>
+
+<div class="modal" id="platinumModal" role="dialog" aria-modal="true" aria-labelledby="platinumTitle">
+  <div class="modal-content">
+    <h3 id="platinumTitle">Platinum Benefits</h3>
+    <ul>
+      <li>All Gold benefits</li>
+      <li>Premium advertising placement</li>
+      <li>Exclusive leadership events</li>
+    </ul>
+    <button class="close">Close</button>
+  </div>
+</div>
+
+        
+    </form>
+  </main>
+  <footer>
+      <div class="social">
+            <a href="https://web.facebook.com/tonny.lumwaji" target="_blank"> <img src="/images/facebook.svg" alt="facebook" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/tonny-lime-72348242/" target="_blank"> <img src="/images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+            <a href="https://myaccount.microsoft.com/?ref=MeControl&login_hint=tlime@byupathway.edu" target="_blank"> <img src="/images/microsoft-teams.svg" alt="teams" width="16" height="16"></a>
+            <a href="https://tonnylime.github.io/wdd231/" target="_blank"> <img src="/images/github.svg" alt="github" width="16" height="16"></a>
+        </div>
+        <div class="finish">
+        <p>©<span id="currentyear"></span>🌹Tonny Lumwaji Lime🌹Kenya</p>
+        <p><span id="lastModified"></span></p>
+        </div>
+  </footer>
+
+</body>
+</html>

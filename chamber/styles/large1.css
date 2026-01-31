@@ -1,0 +1,19 @@
+@media only screen and (min-width: 38rem) {
+    .container {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+  .desigOne {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  form {
+    flex: 1;
+  }
+
+  .membership-section {
+    flex: 2;
+  }
+
+} /*end media query*/

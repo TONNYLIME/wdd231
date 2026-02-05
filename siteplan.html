@@ -40,6 +40,46 @@
         ul {
             margin-left: 20px;
         }
+        /* Wireframe styles */
+        .wireframe-container {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .wireframe {
+            border: 2px solid #999;
+            background: #fafafa;
+            padding: 10px;
+            color: #555;
+        }
+
+        .mobile {
+            width: 280px;
+        }
+
+        .desktop {
+            width: 600px;
+        }
+
+        .box {
+            border: 1px solid #bbb;
+            padding: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 0.9rem;
+            background: #eaeaea;
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            background: #222;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+        }
 
         footer {
             text-align: center;
@@ -190,6 +230,62 @@
         <li>Click-to-WhatsApp integration</li>
         <li>Simple and clear navigation</li>
     </ul>
+</section>
+<section>
+    <h2>Wireframes</h2>
+    <p>
+        The wireframes below show the basic layout of the website on
+        small screens (mobile) and large screens (desktop).
+        They represent structure only, not final design.
+    </p>
+
+    <div class="wireframe-container">
+
+        <!-- Mobile Wireframe -->
+        <div class="wireframe mobile">
+            <h3>📱 Mobile Wireframe</h3>
+
+            <div class="box">Header / Logo</div>
+            <div class="box">Navigation (Hamburger Menu)</div>
+            <div class="box">Hero Section<br>Tagline + CTA</div>
+            <div class="box">About Lumix</div>
+            <div class="box">Solenoids Info</div>
+            <div class="box">Transmission Problems</div>
+            <div class="box">Prices</div>
+            <div class="box">Testimonials</div>
+            <div class="box">Contact Info</div>
+            <div class="box">Footer</div>
+        </div>
+
+        <!-- Desktop Wireframe -->
+        <div class="wireframe desktop">
+            <h3>🖥️ Desktop Wireframe</h3>
+
+            <div class="box">Header (Logo + Call / WhatsApp Buttons)</div>
+            <div class="box">Horizontal Navigation Menu</div>
+            <div class="box">Hero Section (Large Banner)</div>
+
+            <div class="box">
+                About Lumix | Why Choose Us
+            </div>
+
+            <div class="box">
+                Solenoids (Grid Layout – 3 or 4 Columns)
+            </div>
+
+            <div class="box">
+                Transmission Problems & Fixes (Two Columns)
+            </div>
+
+            <div class="box">
+                Prices | Testimonials
+            </div>
+
+            <div class="box">Contact Section + Map</div>
+            <div class="box">Footer</div>
+        </div>
+
+    </div>
 </section>
 
 <footer>

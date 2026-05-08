@@ -1,0 +1,291 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+}
+:root {
+  --primary: #838486;
+  --accent: #020101d7;
+  --bg: #f9fafb;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+main{
+   padding: 1rem;
+}
+
+h1 {
+  grid-row: 1;
+}
+
+/******************header*********************/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+    align-items: center;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #3DA05B;
+}
+
+/*****************HAMBURGER NAVIGATION**************/
+.hamburger {
+    background: none;
+    border: none;
+    color: #3D4058;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ .hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+ }
+ .hamburger.show::before {
+    content: "\00D7";
+    font-size: 2rem;
+ }
+ 
+ .navigation {
+    display: none;
+ }
+
+ .navigation.show {
+    display: block;
+ }
+ .navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+ }
+ .navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: var(--bg);
+    text-decoration: none;
+    background-color: var(--accent);
+    border-bottom: 3px solid #eee;
+
+ }
+ .navigation li.current{
+    background-color: var(--primary);
+ }
+ .navigation a:hover {
+    background-color: #E07A5F;
+ }
+ h1 {
+    margin: 10px;
+    text-align: center;
+ }
+ .main h2,.hero h2,.full  h2 {
+  background-color: var(--accent);
+  text-align: center;
+  color: var(--bg);
+ }
+ .main p {
+  margin: 2rem;
+  padding: 0;
+ }
+
+ /**********************footer********************/
+ footer {
+   
+   padding: 1rem 10px;
+   text-align: center;
+ }
+
+ .social {
+   display: flex;
+   justify-content: center;
+   column-gap: 8px;
+ }
+
+ .social a {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: #ccc solid 1px;
+   width: 44px;
+   height: 44px;
+   border-radius: 22px;
+
+ }
+ .social img {
+   width: 22px;
+   height: 22px;
+
+ }
+
+ .social a:hover {
+   background-color: #ddd;
+ }
+
+ section {
+  padding: 2rem 1rem;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  padding:
+   1rem;
+  max-width: 90%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.byu{
+   display: flex;
+   
+
+}
+
+.course{
+grid-template-columns: 24px auto 44px;
+
+}
+.course h3 {
+  background-color: var(--primary);
+  height: auto;
+  padding: 0;
+  margin: 0;
+  display: block;
+  text-align: center;
+}
+
+.subject a {
+  background-color: var(--primary);
+  text-decoration: none;
+  border-radius: 5px;
+  width: 90px;
+  height: auto;
+  padding: 1rem 40px;
+}
+
+.byu ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    column-gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.finish{
+  background-color: var(--primary);
+}
+#dialog {
+  border: 1px solid rgb(0 0 0 / 10%);
+  border-radius: .25rem;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 3rem #777;
+  width: 90%;
+  max-width: 500px;
+}
+
+::backdrop {
+  background-color: rgb(0 0 0 / 50%);
+}
+
+.button {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  padding: .5rem 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+}
+
+.courses {
+  width: 50px;
+  padding: 2rem;
+}
+#discover section {
+  border: 1px solid #ccc;
+  padding: 5rem;
+  margin-bottom: 10px;
+  max-width: 320px;
+  
+}
+.card {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "name"
+    "image"
+    "description"
+    "location"
+    "information";
+
+}
+#discover section {
+  width: 100%;
+  max-width: none;
+}
+
+.card h2 {
+  grid-area: name;
+}
+.card img {
+  grid-area: image;
+  width: 300px;
+  height: auto;
+  display: block;
+  border: 1px solid black;
+}
+.card p {
+  margin: 1rem 10px;
+  grid-area: description;
+  margin: 1rem 10px;
+}
+.card address{
+  grid-area: location;
+}
+.card button{
+  grid-area: information;
+  width: 10rem;
+}
+
+.card {
+  background: #fff;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid bisque;
+  margin:  0.5rem;
+}

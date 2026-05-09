@@ -253,10 +253,7 @@ grid-template-columns: 24px auto 44px;
     "information";
 
 }
-#discover section {
-  width: 100%;
-  max-width: none;
-}
+
 
 .card h2 {
   grid-area: name;
@@ -271,7 +268,6 @@ grid-template-columns: 24px auto 44px;
 .card p {
   margin: 1rem 10px;
   grid-area: description;
-  margin: 1rem 10px;
 }
 .card address{
   grid-area: location;

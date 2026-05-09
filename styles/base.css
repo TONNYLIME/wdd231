@@ -22,7 +22,7 @@ body {
 }
 
 main{
-   padding: 1rem;
+   padding: 0;
 }
 
 h1 {
@@ -97,7 +97,6 @@ header span {
  }
  h1 {
     margin: 10px;
-    text-align: center;
  }
  .main h2,.hero h2,.full  h2 {
   background-color: var(--accent);
@@ -202,7 +201,7 @@ grid-template-columns: 24px auto 44px;
     margin: auto;
     padding: 0;
     display: flex;
-    column-gap: 1.5rem;
+    column-gap: 5rem;
     align-items: center;
     justify-content: center;
 }

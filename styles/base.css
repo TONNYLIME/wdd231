@@ -27,6 +27,7 @@ main{
 
 h1 {
   grid-row: 1;
+  margin: 10px;
 }
 
 /******************header*********************/
@@ -94,9 +95,6 @@ header span {
  }
  .navigation a:hover {
     background-color: #E07A5F;
- }
- h1 {
-    margin: 10px;
  }
  .main h2,.hero h2,.full  h2 {
   background-color: var(--accent);
@@ -251,6 +249,11 @@ grid-template-columns: 24px auto 44px;
     "description"
     "location"
     "information";
+  background: #fff;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid bisque;
+  margin:  0.5rem;
 
 }
 
@@ -277,10 +280,4 @@ grid-template-columns: 24px auto 44px;
   width: 10rem;
 }
 
-.card {
-  background: #fff;
-  padding: 0.5rem;
-  border-radius: 8px;
-  border: 1px solid bisque;
-  margin:  0.5rem;
-}
+

@@ -1,0 +1,54 @@
+@media only screen and (min-width: 38rem){
+     
+    header,main,nav {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+
+    }
+    .hamburger {
+        display: none;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+    footer {
+      display: flex;
+      column-gap: 10rem;
+      align-items: center;
+      margin: auto;
+      justify-content: center;
+
+    }
+
+    .navigation {
+        display: grid;
+        border-bottom: solid 1px #eee;
+    }
+    .navigation ul{
+        display: flex;
+        margin-right: auto;
+    }
+    .navigation a {
+        border: none;
+    }
+
+    .layout {
+        display: grid;
+        gap: 1.5rem;
+       grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:"main hero"
+                            "full full";
+  }
+
+.main {
+    grid-area: main;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  
+
+}

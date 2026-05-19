@@ -14,7 +14,7 @@
         grid-template-columns: 24px auto;
     }
     footer {
-      display: flex;
+      display: grid;
       column-gap: 10rem;
       align-items: center;
       margin: auto;

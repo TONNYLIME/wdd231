@@ -33,9 +33,6 @@ body {
 
 }
 
-main{
-   padding: 1rem;
-}
 
 h1 {
   grid-row: 1;
@@ -155,5 +152,20 @@ header span {
  section {
   padding: 2rem 1rem;
 }
-   
+.member-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.no-website {
+  color: #777;
+  font-style: italic;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+} 
 

@@ -21,7 +21,7 @@
     <header>
          <img src="images/nairobi.ico" alt="site logo" width="512" height="512">
         <span>Nairobi Chamber of commerce</span>
-        <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>
+        <button id="ham-btn" class="hamburger" aria-label="Open navigation menu" aria-expanded="false"></button>
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
@@ -31,7 +31,18 @@
             <li><a href="#">Join</a></li>
         </ul>
     </nav>
-    <main></main>
+    <main>
+        <h1>Chamber Members in Nairobi</h1>
+        <div class="directory-controls">
+            <button id="grid">⧉ Grid View</button>
+            <button id="list">☰ List View</button>
+        </div>
+
+        <div id="members" class="grid">
+           
+        </div>
+        
+    </main>
     <footer>
         <div class="social">
             <a href="https://web.facebook.com/tonny.lumwaji" target="_blank"> <img src="/images/facebook.svg" alt="facebook" width="16" height="16"></a>

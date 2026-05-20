@@ -1,20 +1,13 @@
-// store the selected element
-const navbutton = document.querySelector('#ham-btn')
-
-//Toggle the show class off and on
-navbutton.addEventListener('click', () => {
-    navbutton.classList.toggle('show');
-});
-
-// select the nav element
+const navbutton = document.querySelector('#ham-btn');
 const navBar = document.querySelector('#nav-bar');
 
-// toggle the button to add or remove class of 'SHOW'
-navbutton.addEventListener ('click', () => {
+navbutton.addEventListener('click', () => {
     navbutton.classList.toggle('show');
     navBar.classList.toggle('show');
-});
 
+    const expanded = navbutton.classList.contains('show');
+    navbutton.setAttribute('aria-expanded', expanded);
+});
 const currentYear = new Date().getFullYear();
 document.getElementById("currentyear").innerHTML = new Date().getFullYear();
 

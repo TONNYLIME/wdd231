@@ -162,4 +162,17 @@ header span {
   text-align: center;
   font-weight: bold;
 } 
+#members.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
 
+#members.list {
+    display: block;
+}
+#members.list section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}

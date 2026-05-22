@@ -84,8 +84,8 @@ function displayMembers(members) {
         src="images/${member.image}" 
         alt="${member.name} logo"
         loading="lazy"
-        width="300"
-        height="200"
+        width="30"
+        height="20"
       >
 
       <h3>${member.name}</h3>

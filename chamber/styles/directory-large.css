@@ -50,6 +50,40 @@ main {
     grid-row: 1 / 2;
   }
 
-  
+    /* Events & Weather side by side */
+  .events-weather {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+
+  /* Spotlights in a row */
+  .spotlights {
+    column-gap: 10rem;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    gap: 8rem;
+    display: block;
+  }
+  .sportlight {
+    display: flex;
+    gap: 5rem;
+  }
+  .enter {
+    max-width: 30rem;
+  }
+
+    
+.card,.events {
+  max-width: 20rem;
+
+}
+
+.weather {
+  max-width: 25rem;
+  background-color: blue;
+}
+
 
 }

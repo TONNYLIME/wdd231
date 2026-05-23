@@ -172,8 +172,68 @@ header span {
     display: block;
 }
 #members.list section {
-    display: flex;
+    display: block;
     align-items: center;
     gap: 1rem;
 }
+/* ---------- Events & Weather ---------- */
 
+.events,
+.weather {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+/* ---------- Spotlights ---------- */
+
+.spotlights {
+  display: flex;
+  column-gap: 2rem;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+}
+
+.enter {
+  background-color: #eaeaea;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+  
+  
+
+}
+
+
+.card {
+  border: 1px solid #3D4058;
+  background-color: #E07A5F;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.card h3 {
+  color: #004a8f;
+  margin: .3rem 0;
+}
+.card #description {
+  text-transform: capitalize;
+  color: #3a525a;
+  margin: .3rem 0;
+}
+.card #temperature {
+  font-size: 2rem;
+  color: #537279;
+  margin: .3rem 0;
+}
+
+.weather {
+  display: grid;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+}

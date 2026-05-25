@@ -110,7 +110,48 @@ header span {
   margin: 2rem;
   padding: 0;
  }
+ .hero {
+  background: url("/chamber/images/subatech.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
+  height: 100vh; /* full screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.5); /* optional dark overlay */
+  padding: 20px;
+  border-radius: 10px;
+}
+ .info-container {
+    grid-template-columns: 1fr;
+    gap: 2px;
+    margin: 5px;
+  }
+  .events h2,
+.weather h2 {
+  margin-bottom: 15px;
+}
+
+.events ul {
+  list-style: none;
+  padding: 0;
+}
+
+.events li {
+  margin-bottom: 10px;
+}
+
+.card {
+  text-align: center;
+}
  /**********************footer********************/
  footer {
    

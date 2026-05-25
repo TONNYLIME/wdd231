@@ -49,13 +49,13 @@ main {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
+  .info-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  
+}
 
-    /* Events & Weather side by side */
-  .events-weather {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 1rem;
-  }
+
 
   /* Spotlights in a row */
   .spotlights {

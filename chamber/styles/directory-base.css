@@ -35,7 +35,12 @@ h1 {
 }
 h3 {
   text-align: center;
+  font-size: .9rem;
+  color: #E07A5F;
+  margin: 1.5rem 0 .2rem 0;
+  border-bottom: 1px solid #eee;
 }
+
 
 /******************header*********************/
 header {
@@ -288,25 +293,21 @@ form {
     margin: 1rem 2%;
     padding: 20px;
     background-color: antiquewhite;
+}
   
-    label {
+label {
       display: block;
       font-size: .8rem;
       color: purple;
       padding-top: .2rem;
-    }
-    h3 {
-      font-size: .9rem;
-      color: #E07A5F;
-      margin: 1.5rem 0 .2rem 0;
-      border-bottom: 1px solid #eee;
-    }
+}
+
   
-    input[type=text],
-    input[type=tel],
-    input[type=date],
-    input[type=email],
-    select {
+input[type=text],
+input[type=tel],
+input[type=date],
+input[type=email],
+select {
       display: block;
       margin: .1rem 0 1rem 0 ;
       padding: .3rem;
@@ -319,11 +320,10 @@ form {
       width: 250px;
     }
   
-    input:required {border-left-color: #d70000;}
-    input:focus {border-left-color: black; outline:none;}
-    input:required:valid{border-left-color: green;}
-  
-    input[type=submit] {
+input:required {border-left-color: #d70000;}
+input:focus {border-left-color: black; outline:none;}
+input:required:valid{border-left-color: green;}
+input[type=submit] {
       border: none;
       text-align: center;
       background-color: #3D405B;
@@ -334,7 +334,7 @@ form {
       font-size: 1.2rem;
       appearance: none;
     }
-  }
+  
   input:-webkit-autofill{
     -webkit-text-fill-color: #3D405B;
   }

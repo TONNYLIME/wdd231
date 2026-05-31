@@ -23,8 +23,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="top-bar">
     <header>
-         <img src="images/nairobi.ico" alt="site logo" width="512" height="512">
+         <img src="images/nairobi.ico" alt="site logo" width="64" height="64">
         <span>Nairobi Chamber of commerce</span>
         <button id="ham-btn" class="hamburger" aria-label="Open navigation menu" aria-expanded="false"></button>
     </header>
@@ -36,6 +37,7 @@
             <li class="current"><a href="./join.html">Join</a></li>
         </ul>
     </nav>
+    </div>
     <main>
         <h1>Join My Chamber of commerce</h1>
         <div class="directory-controls">
@@ -43,8 +45,8 @@
             <button id="list">☰ List View</button>
         </div>
 
-        
-
+        <div class="divide">
+        <section class="form-section">
         <form method="GET" action="thankyou.html" class="designOne">
             <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
             <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
@@ -72,8 +74,9 @@
 
             <button type="submit">Join Us</button>
         </form>
+        </section>
         <!-- MEMBERSHIP CARDS -->
-        <aside class="membership-section" aria-labelledby="membership-heading">
+        <aside class="membership-section">
             <h2 id="membership-heading">Membership Levels</h2>
 
             <div class="cards">
@@ -152,6 +155,7 @@
             </ul>
             <button class="close">Close</button>
         </div>
+    </div>
     </div>
         
     </main>

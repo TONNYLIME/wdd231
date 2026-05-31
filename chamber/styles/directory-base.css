@@ -4,7 +4,7 @@
 
 }
 :root {
-  --primary: #838486;
+  --primary: #0b52e0;
   --accent: #020101d7;
   --bg: #f9fafb;
 }
@@ -50,6 +50,7 @@ header {
     border-bottom: solid 1px #ddd;
     column-gap: 8px;
     align-items: center;
+    
 }
 
 header img {
@@ -61,7 +62,7 @@ header img {
 
 header span {
     font-size: 1.2rem;
-    color: #3DA05B;
+    color: var(--bg);
 }
 
 /*****************HAMBURGER NAVIGATION**************/
@@ -163,6 +164,7 @@ header span {
    
    padding: 1rem 10px;
    background-color: #d3d4d6;
+   color: var(--bg);
  }
 
  .social {
@@ -292,6 +294,7 @@ form {
     margin: 1rem 2%;
     padding: 20px;
     background-color: antiquewhite;
+    width: 25rem;
 }
   
 label {

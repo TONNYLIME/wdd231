@@ -94,7 +94,7 @@ header span {
     background-color: var(--primary);
  }
  .navigation a:hover {
-    background-color: #E07A5F;
+    background-color: #e74fad;
  }
  .main h2,.hero h2,.full  h2 {
   background-color: var(--accent);
@@ -286,7 +286,7 @@ grid-template-columns: 24px auto 44px;
   padding: 1rem;
 }
 
-.discover-card {
+#discover-card {
   border: 1px solid #070505;
   border-radius: 10px;
   overflow: hidden;
@@ -294,18 +294,18 @@ grid-template-columns: 24px auto 44px;
   padding: 1rem;
 }
 
-.discover-card img {
+#discover-card img {
   width: 100%;
   height: auto;
   display: block;
   border-radius: 8px;
 }
 
-.discover-card button {
+#discover-card button {
   padding: .5rem 1rem;
   cursor: pointer;
 }
-.card address {
+#card address {
   font-style: italic;
 }
 

@@ -3,7 +3,6 @@ export const discover1 = [
     name: "Advanced Vehicle Diagnostics Center",
     address: "Industrial Area, Nairobi, Kenya",
     image: "images/diagnostic.webp",
-    alt="Advanced Vehicle Diagnostics Center building",
     description: "A modern automotive diagnostics center offering computerized fault detection and electronic vehicle analysis for all vehicle types.",
     information: "Learn more"
   },

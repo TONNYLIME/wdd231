@@ -163,8 +163,9 @@ header span {
  footer {
    
    padding: 1rem 10px;
-   background-color: #d3d4d6;
+   background-color: var(--primary);
    color: var(--bg);
+   text-align: center;
  }
 
  .social {

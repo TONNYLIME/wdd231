@@ -280,4 +280,32 @@ grid-template-columns: 24px auto 44px;
   width: 10rem;
 }
 
+#discover {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.discover-card {
+  border: 1px solid #070505;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  padding: 1rem;
+}
+
+.discover-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.discover-card button {
+  padding: .5rem 1rem;
+  cursor: pointer;
+}
+.card address {
+  font-style: italic;
+}
 

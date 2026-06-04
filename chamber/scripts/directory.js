@@ -2,11 +2,11 @@ const navbutton = document.querySelector('#ham-btn');
 const navBar = document.querySelector('#nav-bar');
 
 navbutton.addEventListener('click', () => {
-    navbutton.classList.toggle('show');
-    navBar.classList.toggle('show');
+navbutton.classList.toggle('show');
+navBar.classList.toggle('show');
 
-    const expanded = navbutton.classList.contains('show');
-    navbutton.setAttribute('aria-expanded', expanded);
+const expanded = navbutton.classList.contains('show');
+navbutton.setAttribute('aria-expanded', expanded);
 });
 const currentYear = new Date().getFullYear();
 document.getElementById("currentyear").innerHTML = new Date().getFullYear();

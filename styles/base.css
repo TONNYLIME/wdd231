@@ -238,7 +238,7 @@ grid-template-columns: 24px auto 44px;
   padding: 5rem;
   margin-bottom: 10px;
   max-width: 320px;
-  
+
 }
 .card {
   display: grid;
@@ -283,19 +283,19 @@ grid-template-columns: 24px auto 44px;
 #discover {
   display: grid;
   gap: 1rem;
-  padding: 1rem;
+  grid-template-columns: 1fr;
+  
 }
 
 #discover-card {
   border: 1px solid #070505;
   border-radius: 10px;
   overflow: hidden;
-  background: #fff;
   padding: 1rem;
 }
 
 #discover-card img {
-  width: 100%;
+  width: 20PX;
   height: auto;
   display: block;
   border-radius: 8px;
